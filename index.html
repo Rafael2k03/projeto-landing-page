@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,86 +10,81 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100;1,900&display=swap" rel="stylesheet">
 
-    <!-- Estilos CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="styles.css">
 
-    <title>Escola DNC</title>
+    <title>DNC School</title>
 </head>
 <body>
 
-    <!-- MENU SUPERIOR -->
-    <header id="menusuperior">
-        <a href="https://www.escoladnc.com.br">
-            <img src="./Imagens/logo.svg" id="logo" alt="Logo da Escola DNC">
+    <!-- TOP MENU -->
+    <header id="top-menu">
+        <a href="https://www.dncschool.com">
+            <img src="./images/logo.svg" id="logo" alt="DNC School Logo">
         </a>
-        <h1 id="titulo-menusuperior">Dê os primeiros passos da <br> sua carreira em Tecnologia</h1>
-        <p id="texto-menusuperior">
-            Inscreva-se no curso gratuito de Introdução à <br>
-            Tecnologia da DNC School e aprenda os principais <br>
-            fundamentos para construir experiências efetivas.
+        <h1 id="top-menu-title">Take the First Steps in Your Tech Career</h1>
+        <p id="top-menu-text">
+            Enroll in the free Introduction to Technology course at DNC School and learn the fundamental principles to build effective experiences.
         </p>
     </header>
     
-    <!-- MENU INFORMACIONAL -->
-    <section id="menuinformacional">
-        <p class="textoinformativo">
-            <img src="Icones/Certificado.svg" class="icone" alt="Certificado"> Certificado de conclusão
+    <!-- INFORMATIONAL MENU -->
+    <section id="informational-menu">
+        <p class="informational-text">
+            <img src="icons/certificate.svg" class="icon" alt="Certificate"> Completion Certificate
         </p>
-        <p class="textoinformativo">
-            <img src="Icones/Relogio.svg" class="icone" alt="Relógio"> 4 horas de conteúdo
+        <p class="informational-text">
+            <img src="icons/timer.svg" class="icon" alt="Timer"> 4 Hours of Content
         </p>
-        <p class="textoinformativo">
-            <img src="Icones/Camera.svg" class="icone" alt="Câmera"> Aulas online gravadas
+        <p class="informational-text">
+            <img src="icons/video-camera.svg" class="icon" alt="Video Camera"> Recorded Online Classes
         </p>
     </section>
 
-    <!-- SEÇÃO VÍDEO -->
-    <section id="secaovideo">
+    <!-- VIDEO SECTION -->
+    <section id="video-section">
         <iframe id="video" width="502" height="283" 
                 src="https://www.youtube.com/embed/ITxGkd9h4n4" 
-                title="DNC - A escola inovadora que forma profissionais de alta performance" 
+                title="DNC - The Innovative School that Trains High-Performance Professionals" 
                 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 allowfullscreen>
         </iframe>
 
         <div>
-            <h1 id="titulovideo">Aprenda com especialistas e <br> comece seu primeiro projeto</h1>
-            <p id="textovideo">
-                Conheça o processo de desenvolvimento e entenda como utilizar <br>
-                os principais métodos e ferramentas da área para resolver <br>
-                problemas complexos. <br><br>
-                Conquiste seu certificado e desenvolva um projeto prático para <br>
-                aplicar seus conhecimentos.
+            <h1 id="video-title">Learn from Experts and <br> Start Your First Project</h1>
+            <p id="video-text">
+                Discover the development process and understand how to use the main methods and tools in the field to solve complex problems. <br><br>
+                Earn your certificate and develop a practical project to apply your knowledge.
             </p>
         </div>
     </section>
 
-    <!-- CARROSSEL -->
-    <section id="carrossel">
-        <h1 id="titulocarrossel">Mais de 500 alunos já iniciaram seus estudos</h1>
-        <div id="divcards">
-            <img id="Seta-esquerda" onclick="Rolarparaesquerda()" class="seta" src="Icones/Seta-esquerda.svg" alt="Seta Esquerda">
-            <img id="Leonardo" class="card" src="Cards/Leonardo.svg" alt="Card Leonardo">
-            <img id="Samantha" class="card" src="Cards/Samantha.svg" alt="Card Samantha">
-            <img id="Bruna" class="card" src="Cards/Bruna.svg" alt="Card Bruna">
-            <img id="Seta-direita" onclick="Rolarparadireita()" class="seta" src="Icones/Seta-direita.svg" alt="Seta Direita">
+    <!-- CAROUSEL -->
+    <section id="carousel">
+        <h1 id="carousel-title">Over 500 students have started their studies</h1>
+        <div id="cards-container">
+            <img id="left-arrow" onclick="scrollLeft()" class="arrow" src="icons/left-arrow.svg" alt="Left Arrow">
+            <img id="leonardo" class="card" src="cards/leonardo.svg" alt="Card Leonardo">
+            <img id="samantha" class="card" src="cards/samantha.svg" alt="Card Samantha">
+            <img id="bruna" class="card" src="cards/bruna.svg" alt="Card Bruna">
+            <img id="right-arrow" onclick="scrollRight()" class="arrow" src="icons/right-arrow.svg" alt="Right Arrow">
         </div>
     </section>
 
-    <!-- FORMULÁRIO -->
-    <section id="Formulario">
-        <h1 id="tituloformulario">Comece agora mesmo e dê o próximo passo da sua carreira</h1>
+    <!-- FORM SECTION -->
+    <section id="form-section">
+        <h1 id="form-title">Start Now and Take the Next Step in Your Career</h1>
         <form action="https://api.sheetmonkey.io/form/ovsHZcWEEqLKtVwbUxzHnk" method="post">
-            <input type="text" placeholder="Nome" name="Name" required><br>
+            <input type="text" placeholder="Name" name="Name" required><br>
             <input type="email" placeholder="Email" name="Email" required><br>
-            <input type="number" placeholder="Telefone" name="Phone" required><br>
+            <input type="number" placeholder="Phone" name="Phone" required><br>
             <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
-            <button type="submit">Acesse a ementa grátis</button>
+            <button type="submit">Access the Free Syllabus</button>
         </form>
     </section>
 
-    <!-- Scripts JS -->
-    <script src="index.js"></script>
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
 
 </body>
 </html>
